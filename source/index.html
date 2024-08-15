@@ -3,15 +3,44 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
-  <p>Привет, мир!</p>
+  <header class="main-header">
+    <a class="main-header__logo" href="#">Логотип cat energy</a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-header__title">
+      <h1>Функциональное питание для котов</h1>
+      <span>Занялся собой? Займись котом!</span>
+      <button class="main-header__title-button" type="button">подобрать программу<span class="visually-hidden">подобрать программу</span></button>
+    </div>
+  </header>
 </body>
 
 </html>
