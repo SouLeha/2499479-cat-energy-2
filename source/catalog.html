@@ -17,17 +17,17 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__list-item item--current">
+          <li class="main-nav__link">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__list-item">
+          <li class="main-nav__link main-nav__link--current">
             <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__list-item">
+          <li class="main-nav__link">
             <a href="#">
               Подбор программы
             </a>
@@ -152,7 +152,62 @@
           </div>
           <a class="catalog__link" href="#">заказать</a>
         </li>
+        <li class="catalog__item">
+          <h3 class="catalog__item__title">Показать еще 100500 товаров</h3>
+          <p class="catalog__slogan">На самом деле вкусов гораздо больше!</p>
+          <a class="catalog__link link-button" href="#">Показать все</a>
+        </li>
       </ul>
+    </div>
+  </section>
+  <section class="aside">
+    <div class="aside__container">
+      <h2 class="aside__title">Дополнительные товары</h2>
+      <ul class="aside__list">
+        <li class="aside__item">
+          <h3 class="aside__item-title">Сахарозаменитель</h3>
+          <p>1 упаковка (100 г)</p>
+          <span class="aside__price">200 р</span>
+          <a class="aside__link" href="#">заказать</a>
+        </li>
+        <li class="aside__item">
+          <h3 class="aside__item-title">Питьевая вода</h3>
+          <p>5 литров</p>
+          <span class="aside__price">50 р</span>
+          <a class="aside__link" href="#">заказать</a>
+        </li>
+        <li class="aside__item">
+          <h3 class="aside__item-title">Молоко</h3>
+          <p>1 литр</p>
+          <span class="aside__price">100 р</span>
+          <a class="aside__link" href="#">заказать</a>
+        </li>
+        <li class="aside__item">
+          <h3 class="aside__item-title">Витамины</h3>
+          <p>1 упаковка (30 г)</p>
+          <span class="aside__price">300 р</span>
+          <a class="aside__link" href="#">заказать</a>
+        </li>
+        <li class="aside__item">
+          <a class="aside__link" href="#">
+            <h3 class="aside__title-gift visually-hidden">Подарок за выполнение условий</h3>
+            <p class="aside__slogan-gift">Закажите все и получите чехол для кота в подарок!</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="subscribes">
+    <div class="subscribes__container">
+      <h2 class="subscribes__title">Акции и новинки</h2>
+      <p class="subscribes__slogan">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="subscribes__newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label>
+          <span class="visually-hidden">email</span>
+          <input class="subscribes__email" type="email" id="subscribes-email" name="subscribes-email" placeholder="кuklachev@gmail.com" required>
+        </label>
+        <button class="subscribes__button" type="submit">Подписаться</button>
+      </form>
     </div>
   </section>
   <footer class="main-footer">
