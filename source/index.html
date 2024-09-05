@@ -6,6 +6,12 @@
   <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link type="image/png" sizes="180x180" rel="180" href="favicons/180.png">
+  <link type="image/png" sizes="192x192" rel="192" href="favicons/192.png">
+  <link type="image/png" sizes="512x512" rel="512" href="favicons/512.png">
+  <link rel="manifest" href="manifest.json">
   <script src="scripts/index.js" defer></script>
 
 </head>
@@ -18,9 +24,7 @@
         <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
         <img class="logo-picture" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип cat energy">
       </picture>
-      <picture>
-        <img class="logo-words" src="images/logo-words-cat-energy-header.svg" width="101" height="18" alt="Текстовый логотип cat energy">
-      </picture>
+      <img class="logo-words-mobile" src="images/logo-words-cat-energy-header.svg" width="101" height="18" alt="Текстовый логотип cat energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -47,6 +51,11 @@
     <div class="main-header__title">
       <h1>Функциональное питание для котов</h1>
       <span>Занялся собой? Займись котом!</span>
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-cat-energy-product-desktop@1x.png 1x, images/index-cat-energy-product-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-cat-energy-product-tablet@1x.png 1x, images/index-cat-energy-product-tablet@2x.png 2x">
+        <img class="title-product" src="images/index-cat-energy-product-mobile@1x.png" srcset="images/index-background-header-mobile@2x.png 2x" width="280" height="270" alt="оранжевый стакан с продукцией cat energy со вкусом курицы">
+      </picture>
       <button class="main-header__title-button" type="button">подобрать программу</button>
     </div>
     <h2 class="visually-hidden">Программы питания</h2>
@@ -87,6 +96,16 @@
       <h4 class="example__item-title">60 дней</h4>
       <p class="example__item-slogan">затрачено времени</p>
       <h4 class="example__item-title">Затраты на питание: 15 000 РУБ.</h4>
+      <div class="example__slider">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
+          <img class="slider-fat-cat" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="изображение толстого котика слайд до похудения">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
+          <img class="slider-slim-cat" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="изображение худого котика слайд после похудения">
+        </picture>
+      </div>
     </section>
   </header>
   <footer class="main-footer">
@@ -101,7 +120,13 @@
             <span class="contacts__phone-text">Тел.:</span>+7 (812) 555-66-66
           </a>
         </p>
-        <div class="contacts__geoposition"><span class="visually-hidden">Геолокация магазина Cat Energy</span></div>
+        <div class="contacts__geoposition"><span class="visually-hidden">Геолокация магазина Cat Energy</span>
+          <picture>
+            <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/location-cat-energy-desktop@1x.jpg 1x, images/location-cat-energy-desktop@2x.jpg 2x">
+            <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/location-cat-energy-tablet@1x.jpg 1x, images/location-cat-energy-tablet@2x.jpg 2x">
+            <img class="geoposition-map" src="images/location-cat-energy-mobile@1x.jpg" srcset="images/location-cat-energy-mobile@2x.jpg 2x" width="320" height="362" alt="расположение магазина cat energy на карте по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+          </picture>
+        </div>
       </div>
       <div class="main-footer__social social">
         <h2 class="social__title">Cat energy</h2>
