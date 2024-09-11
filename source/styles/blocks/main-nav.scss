@@ -1,5 +1,6 @@
 .main-nav {
-
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .main-nav__toggle {
@@ -15,7 +16,16 @@
 }
 
 .main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+}
 
+.main-nav__link a {
+  text-decoration: none;
 }
 
 .main-nav__link--current {
