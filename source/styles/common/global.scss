@@ -1,4 +1,19 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Lato", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }

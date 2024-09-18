@@ -18,17 +18,20 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <picture>
-        <source width="174" height="50" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/index/logo-desktop.svg">
-        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/index/logo-tablet.svg">
-        <img class="logo-picture" src="images/index/logo-mobile.svg" width="33" height="38" alt="Логотип cat energy">
-      </picture>
-      <img class="logo-words-mobile" src="images/index/logo-words-cat-energy-header.svg" width="101" height="18" alt="Текстовый логотип cat energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="#">
+        <picture>
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/index/logo-desktop.svg">
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/index/logo-tablet.svg">
+          <img class="logo-picture" src="images/index/logo-mobile.svg" width="33" height="38" alt="Логотип cat energy">
+        </picture>
+        <img class="logo-words-mobile" src="images/index/logo-words-cat-energy-header.svg" width="101" height="18" alt="Текстовый логотип cat energy">
+      </a>
+      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-header__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+    </div>
+    <div class="main-nav">
+      <nav class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__link main-nav__link--current">
             <a href="index.html">
@@ -46,8 +49,8 @@
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <div class="main-header__title">
       <h1>Функциональное питание для котов</h1>
       <span>Занялся собой? Займись котом!</span>
@@ -61,12 +64,12 @@
     <h2 class="visually-hidden">Программы питания</h2>
     <section class="services">
       <div class="services__item">
-        <h3 class="services__title">Похудение</h3>
+        <h3 class="services__title services__title-slim">Похудение</h3>
         <p class="services__slogan">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <button class="services__item-button" type="button">каталог slim</button>
       </div>
       <div class="services__item">
-        <h3 class="services__title">Набор массы</h3>
+        <h3 class="services__title services__title-pro">Набор массы</h3>
         <p class="services__slogan">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <button class="services__item-button" type="button">каталог pro</button>
       </div>

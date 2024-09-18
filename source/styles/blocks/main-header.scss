@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.main-header__wrapper {
+  display: flex;
+}
+
 .main-header__logo {
   margin: 0;
 }
@@ -13,4 +17,27 @@
 .main-header__title-button {
   background-color: #68b738;
   color: #ffffff;
+}
+
+.main-header__toggle {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#icon-burger");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.main-header__toggle--close {
+  display: none;
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#icon-cross");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  border: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
 }
