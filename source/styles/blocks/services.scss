@@ -73,10 +73,29 @@
 }
 
 .services__item-button {
+  display: flex;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  border: none;
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  padding: 4px;
+}
+
+.services__item-button::after {
+  display: block;
+  content: "";
+  mask-image: url("../../icons/stack.svg#icon-arrow");
+  background-color: #000000;
+  mask-size: 24px 12px;
+  mask-position: 100%;
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 12px;
+  margin-left: 15px;
 }
