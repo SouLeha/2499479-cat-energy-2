@@ -40,5 +40,49 @@
 }
 
 .example__slider {
+  position: relative;
   margin: 0;
+}
+
+.example__slider-button {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 50%;
+}
+
+.example__slider-button::before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example__slider-button::after {
+  position: absolute;
+  content: "";
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#icon-slider-arrow");
+  mask-position: 50%;
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
