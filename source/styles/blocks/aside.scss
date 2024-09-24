@@ -20,6 +20,7 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  list-style-type: none;
 }
 
 .aside__item {
@@ -47,6 +48,25 @@
   text-decoration: none;
   background-color: #68b738;
   color: #ffffff;
+  margin: 0 auto;
+}
+
+.aside__item-gift {
+  display: block;
+  background-color: #68b738;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.aside__slogan-gift::before {
+  display: block;
+  content: "";
+  background-image: url("../../icons/stack.svg#catalog_icon-gift");
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 }
 
 .aside__slogan-gift {
@@ -54,6 +74,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-transform: none;
+  text-decoration: none;
   background-color: #68b738;
   color: #ffffff;
+  width: 162px;
+  text-align: center;
+  margin: 0 auto;
 }

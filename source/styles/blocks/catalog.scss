@@ -19,7 +19,23 @@
 }
 
 .catalog__item {
+  display: block;
   list-style-type: none;
+  width: 280px;
+  text-align: center;
+}
+
+.catalog__item-more::before {
+  display: block;
+  content: "";
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#icon-plus");
+  mask-repeat: no-repeat;
+  mask-size: 30px 30px;
+  mask-position: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
 }
 
 .catalog__item-link {
