@@ -11,6 +11,19 @@
   margin: 0;
 }
 
+.main-header__container {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, transparent 50%), url("../../images/index/index-background-header-mobile@1x.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+// .main-header__container::before {
+//   background-color: rgba(104, 183, 56, 0.85);
+//   width: 320px;
+// }
+
 .main-header__title {
   margin: 0;
   margin-bottom: 20px;
