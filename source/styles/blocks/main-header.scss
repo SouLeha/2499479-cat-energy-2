@@ -12,21 +12,50 @@
 }
 
 .main-header__container {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, transparent 50%), url("../../images/index/index-background-header-mobile@1x.png");
-  background-size: auto;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/index-background-header-mobile@1x.png");
+  background-size: 320px 302px;
   background-repeat: no-repeat;
   margin: 0;
   margin-bottom: 20px;
+  padding-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/index/index-background-header-mobile@2x.png");
+  }
 }
 
-// .main-header__container::before {
-//   background-color: rgba(104, 183, 56, 0.85);
-//   width: 320px;
-// }
-
 .main-header__title {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: none;
+  text-align: center;
+  width: auto;
+  margin: 0 35px 25px;
+}
+
+.main-header__slogan {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
+}
+
+.main-header__product {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-header__title-button {
@@ -38,6 +67,7 @@
   text-transform: uppercase;
   border: none;
   padding: 10px 64px;
+  margin: 0 20px;
 }
 
 .main-header__toggle {

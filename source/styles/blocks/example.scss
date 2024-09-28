@@ -1,29 +1,54 @@
 .example {
   margin: 0;
+  padding: 0 20px;
+  padding-top: 25px;
+  background-color: #eaeaea;
 }
 
 .example__title {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: start;
   color: #000000;
+  margin: 0;
 }
 
 .example__slogan {
   font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.example__item-result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .example__item-title {
+  display: block;
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
+  width: 124px;
   color: #000000;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin-bottom: 0;
 }
 
 .example__item-title-price {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -33,10 +58,17 @@
 
 .example__item-slogan {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  width: 86px;
+  background-color: #eaeaea;
   color: #000000;
+  padding: 0 4px;
+  margin: 0;
+  margin-top: -10px;
+  margin-left: 18px;
 }
 
 .example__slider {
