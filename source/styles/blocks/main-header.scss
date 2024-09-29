@@ -5,10 +5,16 @@
 
 .main-header__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-header__logo {
   margin: 0;
+  margin-top: 13px;
+  padding-right: 56px;
 }
 
 .main-header__container {
@@ -79,6 +85,7 @@
   width: 24px;
   height: 24px;
   margin: 0;
+  margin-top: 20px;
 }
 
 .main-header__toggle-close {
@@ -91,4 +98,5 @@
   width: 18px;
   height: 18px;
   margin: 0;
+  margin-top: 20px;
 }
