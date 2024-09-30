@@ -2,19 +2,34 @@
   margin: 0;
 }
 
+.main-header__navigation {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 25px;
+  }
+}
 
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  margin-top: 13px;
+  margin-bottom: 15px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+  }
 }
 
 .main-header__logo {
   margin: 0;
-  margin-top: 13px;
-  padding-right: 56px;
 }
 
 .main-header__container {
@@ -30,6 +45,11 @@
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../../images/index/index-background-header-mobile@2x.png");
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    position: relative;
+  }
 }
 
 .main-header__title {
@@ -43,6 +63,15 @@
   text-align: center;
   width: auto;
   margin: 0 35px 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+    width: 420px;
+    margin: 38px 0 40px 120px;
+  }
 }
 
 .main-header__slogan {
@@ -57,6 +86,16 @@
   width: auto;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: start;
+    width: 290px;
+    margin-left: 120px;
+    margin-bottom: 21px;
+  }
 }
 
 .main-header__product {
@@ -74,6 +113,15 @@
   border: none;
   padding: 10px 64px;
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 120px;
+    padding: 14px 26px;
+    top: 34%;
+  }
 }
 
 .main-header__toggle {
@@ -85,7 +133,10 @@
   width: 24px;
   height: 24px;
   margin: 0;
-  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle-close {
@@ -98,5 +149,8 @@
   width: 18px;
   height: 18px;
   margin: 0;
-  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

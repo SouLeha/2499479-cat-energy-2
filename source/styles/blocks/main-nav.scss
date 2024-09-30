@@ -13,19 +13,56 @@
 
 .main-nav__list {
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 540px;
+    justify-content: end;
+  }
+}
+
+.main-nav__list li:nth-last-child(1) {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-right: 34px;
+  }
 }
 
 .main-nav__link {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   list-style-type: none;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    padding-right: 34px;
+  }
 }
 
 .main-nav__link a {
+  display: block;
+  border-top: 1px solid #e6e6e6;
   text-decoration: none;
+  color: #000000;
+  padding: 22px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .main-nav__link--current {

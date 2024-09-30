@@ -1,4 +1,8 @@
 .logo-words-mobile {
   margin: 0;
   margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
