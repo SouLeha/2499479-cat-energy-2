@@ -1,6 +1,10 @@
 .services {
   font-family: "Lato", sans-serif;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .services__item {
@@ -10,6 +14,10 @@
   margin-top: 20px;
   padding-top: 30px;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .services__title {
@@ -21,11 +29,20 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
   margin: 0 0 29px;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    margin-bottom: 24px;
+    margin-left: 53px;
+  }
 }
 
 .services__title-slim::before {
@@ -36,6 +53,15 @@
   width: 50px;
   height: 50px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    right: 0;
+    top: 25%;
+  }
 }
 
 .services__title-slim::after {
@@ -49,6 +75,15 @@
   top: -3px;
   left: 7px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    background-size: 140px 194px;
+    width: 140px;
+    height: 194px;
+    right: 10%;
+    top: 25%;
+    left: auto;
+  }
 }
 
 .services__title-pro::before {
@@ -59,6 +94,15 @@
   width: 50px;
   height: 50px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    right: 0;
+    top: 25%;
+  }
 }
 
 .services__title-pro::after {
@@ -71,6 +115,15 @@
   height: 28px;
   left: -9px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 112px;
+    width: 268px;
+    height: 112px;
+    right: 10%;
+    top: 25%;
+    left: auto;
+  }
 }
 
 .services__slogan {
@@ -80,6 +133,11 @@
   width: 240px;
   margin-left: 20px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+    border: none;
+  }
 }
 
 .services__item-button {
@@ -94,7 +152,12 @@
   margin: 0;
   margin-left: 20px;
   padding: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+  }
 }
+
 
 .services__item-button::after {
   display: block;
