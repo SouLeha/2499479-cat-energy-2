@@ -3,6 +3,12 @@
   padding: 0 20px;
   padding-top: 25px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 45px;
+    background-color: #ffffff;
+  }
 }
 
 .example__title {
@@ -13,6 +19,11 @@
   text-align: start;
   color: #000000;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__slogan {
@@ -20,12 +31,46 @@
   margin: 0;
   padding: 0;
   padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 60px;
+  }
+}
+
+.example__item-promotion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 55px;
+  }
 }
 
 .example__item-result {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-width: 280px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .example__item {
+    justify-content: start;
+    width: auto;
+    margin-right: 43px;
+  }
 }
 
 .example__item-title {
@@ -40,20 +85,38 @@
   color: #000000;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  margin: 0;
   padding: 0;
   padding-top: 14px;
   padding-bottom: 17px;
-  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    padding: 15px 28px 18px;
+  }
 }
 
-.example__item-title-price {
+.example__item-slogan-price {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 180px;
+    text-align: end;
+    align-self: start;
+    margin: 0;
+    margin-top: 11px;
+  }
 }
 
 .example__item-slogan {
@@ -69,11 +132,31 @@
   margin: 0;
   margin-top: -10px;
   margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: max-content;
+    padding: 0 8px;
+    margin: -8px auto 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__item-price {
+    display: block;
+    margin-top: 9px;
+  }
 }
 
 .example__slider {
   position: relative;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+  }
 }
 
 .example__slider-button {
