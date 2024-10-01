@@ -8,8 +8,12 @@
 
 .page__body {
   font-family: $primary-font;
-  // width: 320px;
+  width: 320px;
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
