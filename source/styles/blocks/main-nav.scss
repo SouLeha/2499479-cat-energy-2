@@ -32,6 +32,10 @@
     border: none;
     padding-right: 34px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
 }
 
 .main-nav__link {
@@ -51,6 +55,12 @@
     border: none;
     padding-right: 34px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 34px;
+  }
 }
 
 .main-nav__link a {
@@ -62,6 +72,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 14px 0 10px;
   }
 }
 

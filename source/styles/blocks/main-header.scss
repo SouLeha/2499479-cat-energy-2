@@ -1,5 +1,9 @@
 .main-header {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .main-header__navigation {
@@ -9,6 +13,11 @@
     justify-content: space-between;
     margin: 0;
     margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 110px;
   }
 }
 
@@ -25,6 +34,10 @@
     margin: 0;
     padding: 0;
     padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -44,11 +57,21 @@
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../../images/index/index-background-header-mobile@2x.png");
+    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
     background-image: none;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/index/index-background-header-desktop@1x.png");
+    background-size: 720px 694px;
+    margin-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -71,6 +94,11 @@
     text-align: start;
     width: 420px;
     margin: 38px 0 40px 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+    margin-left: 190px;
   }
 }
 
@@ -96,11 +124,24 @@
     margin-left: 120px;
     margin-bottom: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    margin-bottom: 82px;
+    padding-bottom: 290px;
+  }
 }
 
 .main-header__product {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    top: -84px;
+    right: 23%;
+  }
 }
 
 .main-header__title-button {
@@ -119,8 +160,13 @@
     font-size: 20px;
     line-height: 26px;
     margin-left: 120px;
-    padding: 14px 26px;
-    top: 34%;
+    padding: 14px 28px;
+    top: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    top: 228px;
   }
 }
 
