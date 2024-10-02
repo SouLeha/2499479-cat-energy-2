@@ -5,9 +5,11 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0;
+    padding-bottom: 102px;
     padding-top: 45px;
-    background-color: #ffffff;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #eaeaea 462px, transparent 462px, transparent 100%);
   }
 }
 
@@ -23,6 +25,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 0 30px;
   }
 }
 
@@ -35,6 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 0 30px;
     padding-top: 60px;
   }
 }
@@ -48,6 +52,7 @@
     justify-content: space-between;
     font-size: 16px;
     line-height: 24px;
+    padding: 0 30px;
     padding-top: 55px;
   }
 }
@@ -152,10 +157,25 @@
 
 .example__slider {
   position: relative;
+  min-width: 280px;
+  min-height: 256px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 100px;
+    min-width: 560px;
+    min-height: 512px;
+    padding: 0 30px;
+  }
+}
+
+.example__slider-img {
+  position: absolute;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    transform: translate(13%, 0);
   }
 }
 
