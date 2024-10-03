@@ -20,6 +20,11 @@
     align-items: center;
     padding: 56px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 66px 110px;
+  }
 }
 
 
@@ -37,6 +42,10 @@
     align-items: center;
     width: 420px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 676px;
   }
 }
 

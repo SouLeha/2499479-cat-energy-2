@@ -8,6 +8,11 @@
     padding: 0 30px;
     margin-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 67px;
+  }
 }
 
 .advantages__wrapper {
@@ -45,6 +50,11 @@
     gap: 37px 59px;
     counter-reset: chapter;
   }
+
+  @media (min-width: $desktop-width) {
+
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .advantages__item {
@@ -65,6 +75,10 @@
     padding-top: 40px;
     padding-right: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -84,6 +98,16 @@
 
   .advantages__item--benefits::after {
     right: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item::after {
+    right: 10px;
+  }
+
+  .advantages__item--benefits::after {
+    right: 37px;
   }
 }
 

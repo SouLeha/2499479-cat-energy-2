@@ -1,7 +1,12 @@
 .main-nav {
   background-color: #ffffff;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
+
 
 .main-nav__toggle {
   margin: 0;
@@ -20,6 +25,7 @@
     flex-wrap: wrap;
     width: 540px;
     justify-content: end;
+    padding-right: 30px;
   }
 }
 
@@ -56,7 +62,7 @@
     padding-right: 34px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
     padding-right: 34px;
@@ -73,6 +79,17 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 14px 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+    padding: 18px 0 6px;
+  }
+}
+
+.main-nav__link--catalog a {
+  @media (min-width: $desktop-width) {
+    color: #000000;
   }
 }
 
