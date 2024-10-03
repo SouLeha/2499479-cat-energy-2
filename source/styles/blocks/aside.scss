@@ -3,7 +3,9 @@
 }
 
 .aside__container {
+  width: 320px;
   margin: 0;
+  padding: 0 20px;
 }
 
 .aside__title {
@@ -12,6 +14,9 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
 }
 
 .aside__list {
@@ -21,6 +26,7 @@
   line-height: 14px;
   color: #444444;
   list-style-type: none;
+  padding: 0;
 }
 
 .aside__item {
@@ -28,18 +34,27 @@
 }
 
 .aside__item-title {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  text-transform: uppercase;
   color: #222222;
 }
 
+.aside__volume {
+  display: inline-block;
+  margin: 0;
+}
+
 .aside__price {
+  display: inline-block;
   margin: 0;
 }
 
 .aside__link {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -48,6 +63,7 @@
   text-decoration: none;
   background-color: #68b738;
   color: #ffffff;
+  text-align: center;
   margin: 0 auto;
 }
 
