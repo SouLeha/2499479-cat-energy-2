@@ -27,6 +27,12 @@
     justify-content: end;
     padding-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-right: 0;
+    justify-content: end;
+  }
 }
 
 .main-nav__list li:nth-last-child(1) {
@@ -37,10 +43,6 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding-right: 34px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 0;
   }
 }
 
@@ -87,10 +89,25 @@
   }
 }
 
-.main-nav__link--catalog a {
-  @media (min-width: $desktop-width) {
+.main-nav__link--catalog {
+  @media (min-width: $tablet-width) {
     color: #000000;
+    padding-right: 0;
+    padding-left: 34px;
   }
+}
+
+.main-nav__link--catalog a {
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    // padding-right: 0;
+    // padding-left: 34px;
+  }
+  // @media (min-width: $desktop-width) {
+  //   color: #000000;
+  //   padding-right: 0;
+  //   padding-left: 34px;
+  // }
 }
 
 .main-nav__link--current {
