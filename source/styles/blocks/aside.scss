@@ -6,6 +6,13 @@
   width: 320px;
   margin: 0;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0;
+    margin-top: 74px;
+    padding: 0 30px;
+  }
 }
 
 .aside__title {
@@ -21,7 +28,11 @@
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 0;
+    padding-left: 40px;
+    border-bottom: none;
   }
 }
 
@@ -34,6 +45,11 @@
   list-style-type: none;
   padding: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+    padding: 26px 0;
+  }
 }
 
 .aside__item {
@@ -41,6 +57,13 @@
   font-size: 0;
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    border: 1px solid #cdcdcd;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
 }
 
 .aside__item-title {
@@ -53,6 +76,14 @@
   color: #222222;
   margin: 0;
   margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    width: 50%;
+  }
 }
 
 .aside__volume {
@@ -65,6 +96,13 @@
   margin: 0;
   padding: 0;
   margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 40%;
+    text-align: end;
+  }
 }
 
 .aside__price {
@@ -77,6 +115,13 @@
   width: 50%;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 10%;
+    text-align: end;
+  }
 }
 
 .aside__link {
@@ -101,6 +146,12 @@
   width: 280px;
   margin: 0 auto;
   margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    margin-top: 70px;
+  }
 }
 
 .aside__slogan-gift::before {
