@@ -23,9 +23,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 540px;
     justify-content: end;
-    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-right: 34px;
+    padding-left: 34px;
   }
 }
 
@@ -61,13 +59,12 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
-    padding-right: 34px;
+    padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 34px;
   }
 }
 
@@ -100,14 +97,7 @@
 .main-nav__link--catalog a {
   @media (min-width: $tablet-width) {
     color: #000000;
-    // padding-right: 0;
-    // padding-left: 34px;
   }
-  // @media (min-width: $desktop-width) {
-  //   color: #000000;
-  //   padding-right: 0;
-  //   padding-left: 34px;
-  // }
 }
 
 .main-nav__link--current {
