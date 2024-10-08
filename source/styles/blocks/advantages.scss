@@ -1,7 +1,18 @@
 .advantages {
-  width: 280px;
+  width: auto;
   margin: 0;
   margin-bottom: 30px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 67px;
+  }
 }
 
 .advantages__wrapper {
@@ -12,10 +23,18 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   text-align: start;
   color: #000000;
   margin: 0;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
@@ -23,6 +42,19 @@
   margin: 0;
   margin-top: 40px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 59px;
+    counter-reset: chapter;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .advantages__item {
@@ -30,6 +62,53 @@
   justify-content: start;
   gap: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+    padding-bottom: 57px;
+    padding-top: 40px;
+    padding-right: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item::after {
+    display: block;
+    content: counter(chapter) "";
+    position: absolute;
+    top: 0;
+    right: 76px;
+    z-index: -1;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #f2f2f2;
+    counter-increment: chapter;
+  }
+
+  .advantages__item--benefits::after {
+    right: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item::after {
+    right: 10px;
+  }
+
+  .advantages__item--benefits::after {
+    right: 37px;
+  }
 }
 
 .advantages__item--benefits::before {
@@ -62,4 +141,11 @@
   height: 60px;
   margin-bottom: 20px;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-right: 38px;
+    margin-bottom: 31px;
+  }
 }
