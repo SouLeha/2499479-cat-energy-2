@@ -18,6 +18,14 @@
     padding: 60px 70px;
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    margin: 0;
+    padding: 60px 84px 60px 70px;
+    position: absolute;
+    transform: translate(21%, 59%);
+  }
 }
 
 .contacts__container {
