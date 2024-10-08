@@ -1,5 +1,23 @@
 .contacts {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+}
+
+.contacts__container-catalog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eaeaea;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 60px 70px;
+    width: 768px;
+  }
 }
 
 .contacts__container {
@@ -9,9 +27,9 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 60px 70px;
-    padding: 0;
-    width: 628px;
+    margin: 0;
+    padding: 60px 70px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
