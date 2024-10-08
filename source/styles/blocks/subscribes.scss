@@ -3,6 +3,12 @@
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0 30px;
+  }
 }
 
 .subscribes__container {
@@ -18,6 +24,12 @@
   color: #000000;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+  }
 }
 
 .subscribes__slogan {
@@ -29,11 +41,25 @@
   text-align: center;
   margin: 0;
   padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-top: 66px;
+    padding: 0;
+  }
 }
 
 .subscribes__newsletter-form {
   margin: 0;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 24px 38px 0;
+  }
 }
 
 .subscribes__email {
@@ -47,6 +73,12 @@
   text-transform: uppercase;
   color: #444444;
   padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .subscribes__button {
@@ -62,4 +94,8 @@
   border: none;
   margin-top: 16px;
   padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
