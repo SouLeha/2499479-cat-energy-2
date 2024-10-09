@@ -87,6 +87,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 896px;
     padding: 0;
@@ -187,7 +188,7 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin-top: 0;
+    margin: 0;
   }
 }
 

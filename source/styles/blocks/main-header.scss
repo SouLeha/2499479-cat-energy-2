@@ -23,6 +23,7 @@
 }
 
 .main-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,14 +187,18 @@
 }
 
 .main-header__toggle {
+  position: absolute;
+  z-index: 2;
   background-color: #ffffff;
   background-image: url("../../icons/stack.svg#icon-burger");
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  border: none;
   width: 24px;
   height: 24px;
   margin: 0;
+  cursor: pointer;
+  border: none;
+  right: 21px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -202,16 +207,24 @@
 
 .main-header__toggle-close {
   display: none;
+  position: absolute;
+  z-index: 10;
   background-color: #ffffff;
   background-image: url("../../icons/stack.svg#icon-cross");
   background-repeat: no-repeat;
   background-size: 18px 18px;
-  border: none;
   width: 18px;
   height: 18px;
   margin: 0;
+  cursor: pointer;
+  border: none;
+  right: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header--nojs {
+  display: none;
 }
