@@ -1,7 +1,13 @@
 .main-nav {
-  position: relative;
   background-color: #ffffff;
   color: #000000;
+
+  @media (max-width: $mobile-width-only) {
+    position: fixed;
+    width: 320px;
+    z-index: 3;
+  }
+
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
@@ -116,7 +122,7 @@
   }
 }
 
-.main-nav__link--catalog .main-nav__link--current {
+.main-nav__link--catalog.main-nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;
   }
@@ -124,7 +130,7 @@
 
 .main-nav--close .main-nav__toggle {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background-color: #ffffff;
   background-image: url("../../icons/stack.svg#icon-burger");
   background-repeat: no-repeat;
@@ -144,7 +150,7 @@
 
 .main-nav--open .main-nav__toggle {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background-color: #ffffff;
   background-image: url("../../icons/stack.svg#icon-cross");
   background-repeat: no-repeat;
