@@ -226,7 +226,9 @@
 .aside__item-gift {
   display: block;
   font-size: 0;
-  background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/catalog/background-gift-mobile@1x.png");
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/catalog/background-gift-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 280px 290px;
   width: 280px;
@@ -238,7 +240,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/catalog/background-gift-tablet@1x.png");
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog/background-gift-tablet@1x.png");
     background-size: 707px 200px;
     width: 100%;
     min-height: 200px;
@@ -250,7 +254,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/catalog/background-gift-desktop@1x.png");
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog/background-gift-desktop@1x.png");
     background-size: 245px 288px;
     width: 245px;
     margin-top: 0;
