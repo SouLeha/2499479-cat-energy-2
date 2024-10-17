@@ -8,15 +8,18 @@
     margin-top: 80px;
     margin-bottom: 0;
     padding: 0 30px;
+    padding-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 88px;
     padding: 0 110px;
+    padding-bottom: 80px;
   }
 }
 
 .subscribes__container {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -40,6 +43,35 @@
     font-size: 40px;
     line-height: 40px;
     padding: 0;
+  }
+}
+
+.subscribes__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #68b738;
+    top: 16px;
+    left: -40px;
+  }
+}
+
+
+.subscribes__title::after {
+  position: absolute;
+  content: "";
+  width: 108px;
+  height: 2px;
+  background-color: #68b738;
+  top: 16px;
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 456px;
+    top: 16px;
+    right: -40px;
   }
 }
 

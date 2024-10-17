@@ -3,6 +3,7 @@
 }
 
 .aside__container {
+  position: relative;
   width: 320px;
   margin: 0;
   padding: 0 20px;
@@ -49,6 +50,16 @@
     line-height: 40px;
     padding-left: 0;
   }
+}
+
+.aside__title::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: #68b738;
+  top: 16px;
+  right: 0;
 }
 
 .aside__wrapper {
