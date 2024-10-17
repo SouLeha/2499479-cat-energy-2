@@ -60,6 +60,31 @@
   background-color: #68b738;
   top: 16px;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 915px;
+  }
+}
+
+
+.aside__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+    top: 16px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
 }
 
 .aside__wrapper {
