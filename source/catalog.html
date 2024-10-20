@@ -27,30 +27,29 @@
           </picture>
           <img class="logo-words-mobile" src="images/index/logo-words-cat-energy-header.svg" width="101" height="18" alt="Текстовый логотип cat energy">
         </a>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-header__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
       </div>
-      <div class="main-nav">
-        <nav class="main-nav__wrapper">
+      <nav class="main-nav main-nav--close main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__link   main-nav__link--catalog main-nav__link--current">
+            <li class="main-nav__link main-nav__link--catalog">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__link   main-nav__link--catalog">
+            <li class="main-nav__link main-nav__link--catalog main-nav__link--current">
               <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__link   main-nav__link--catalog">
+            <li class="main-nav__link main-nav__link--catalog">
               <a href="#">
                 Подбор программы
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
   <section class="catalog">
@@ -261,26 +260,34 @@
         <ul class="aside__list">
           <li class="aside__item">
             <h3 class="aside__item-title">Сахарозаменитель</h3>
-            <p class="aside__volume">1 упаковка (100 г)</p>
-            <span class="aside__price">200 ₽</span>
+            <div class="aside__item-size">
+              <p class="aside__volume">1 упаковка (100 г)</p>
+              <span class="aside__price">200 ₽</span>
+            </div>
             <a class="aside__link" href="#">заказать</a>
           </li>
           <li class="aside__item">
             <h3 class="aside__item-title">Питьевая вода</h3>
-            <p class="aside__volume">5 литров</p>
-            <span class="aside__price">50 ₽</span>
+            <div class="aside__item-size">
+              <p class="aside__volume">5 литров</p>
+              <span class="aside__price">50 ₽</span>
+            </div>
             <a class="aside__link" href="#">заказать</a>
           </li>
           <li class="aside__item">
             <h3 class="aside__item-title">Молоко</h3>
-            <p class="aside__volume">1 литр</p>
-            <span class="aside__price">100 ₽</span>
+            <div class="aside__item-size">
+              <p class="aside__volume">1 литр</p>
+              <span class="aside__price">100 ₽</span>
+            </div>
             <a class="aside__link" href="#">заказать</a>
           </li>
           <li class="aside__item">
             <h3 class="aside__item-title">Витамины</h3>
-            <p class="aside__volume">1 упаковка (30 г)</p>
-            <span class="aside__price">300 ₽</span>
+            <div class="aside__item-size">
+              <p class="aside__volume">1 упаковка (30 г)</p>
+              <span class="aside__price">300 ₽</span>
+            </div>
             <a class="aside__link" href="#">заказать</a>
           </li>
         </ul>
@@ -349,6 +356,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

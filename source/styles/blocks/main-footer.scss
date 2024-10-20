@@ -8,6 +8,10 @@
 
 .main-footer__contacts {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .main-footer__social-container {
