@@ -169,6 +169,7 @@
   border: none;
   padding: 10px 64px;
   margin: 0 20px;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -176,7 +177,7 @@
     line-height: 26px;
     margin-left: 120px;
     padding: 14px 28px;
-    top: 295px;
+    top: 293px;
   }
 
   @media (min-width: $desktop-width) {
