@@ -45,6 +45,14 @@
 
 .main-header__logo {
   margin: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__container {
@@ -171,6 +179,7 @@
   padding: 10px 64px;
   margin: 0 20px;
   margin-top: 2px;
+
 
   @media (min-width: $tablet-width) {
     position: absolute;

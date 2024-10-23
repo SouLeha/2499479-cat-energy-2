@@ -78,6 +78,14 @@
   color: #000000;
   padding: 22px 0 24px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: block;

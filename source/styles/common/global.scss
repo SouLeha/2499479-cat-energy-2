@@ -22,3 +22,24 @@ img {
 a {
   text-decoration: none;
 }
+
+.button {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-grey {
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+  }
+}
