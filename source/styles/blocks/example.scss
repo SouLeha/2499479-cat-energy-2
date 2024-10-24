@@ -1,6 +1,6 @@
 .example {
   margin: 0;
-  padding: 0 20px;
+  padding: 40px 20px;
   padding-top: 25px;
   background-color: #eaeaea;
 
@@ -94,7 +94,7 @@
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    margin: 0;
   }
 }
 
@@ -170,6 +170,8 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin-top: 19px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -178,7 +180,7 @@
     text-align: end;
     align-self: start;
     margin: 0;
-    margin-top: 11px;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -209,14 +211,14 @@
 
 .example__slider {
   position: relative;
-  min-width: 280px;
+  overflow: hidden;
+  min-width: 100%;
   min-height: 256px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 100px;
-    min-width: 560px;
     min-height: 512px;
+    margin-top: 98px;
     padding: 0 30px;
   }
 
@@ -225,6 +227,12 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.example__slider-before,
+.example__slider-after {
+  width: 50%;
+  height: 100%;
 }
 
 .example__slider-img {
@@ -238,6 +246,46 @@
 
   @media (min-width: $desktop-width) {
     transform: translate(0);
+  }
+}
+
+.example__slider-img--fat-cat {
+  object-fit: cover;
+  object-position: left;
+  width: 50%;
+  min-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 36.5%;
+    min-height: 512px;
+    left: 9%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    left: 0;
+  }
+}
+
+.example__slider-img--slim-cat {
+  position: absolute;
+  object-fit: cover;
+  object-position: right;
+  right: 0;
+  width: 50%;
+  min-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 36.5%;
+    min-height: 512px;
+    right: 18%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -265,7 +313,7 @@
   width: 40px;
   height: 40px;
   top: 50%;
-  left: 50%;
+  left: 2px;
   transform: translate(-50%, -50%);
 }
 
@@ -282,4 +330,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.example__slider-button:hover,
+.example__slider-button:hover::after,
+.example__slider-button:focus,
+.example__slider-button:focus::after {
+  background-color: #68b738;
+}
+
+.example__slider-button:hover::before,
+.example__slider-button:focus::before {
+  border-color: #68b738;
+}
+
+
+.example__slider-button:active,
+.example__slider-button:active::after {
+  opacity: 0.6;
 }

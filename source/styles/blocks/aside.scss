@@ -3,6 +3,7 @@
 }
 
 .aside__container {
+  position: relative;
   width: 320px;
   margin: 0;
   padding: 0 20px;
@@ -17,7 +18,7 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0;
-    margin-top: 70px;
+    margin-top: 72px;
     padding: 0 110px;
   }
 }
@@ -31,13 +32,14 @@
   margin: 0;
   margin-top: 25px;
   padding: 0;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
     margin-top: 0;
+    margin-bottom: 84px;
     padding-left: 40px;
     padding-bottom: 0;
     border-bottom: none;
@@ -47,6 +49,44 @@
     font-size: 40px;
     line-height: 40px;
     padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.aside__title::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: #68b738;
+  top: 8px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 358px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 915px;
+    top: 16px;
+  }
+}
+
+
+.aside__title::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+    top: 16px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
   }
 }
 
@@ -54,7 +94,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 78px;
   }
 }
 
@@ -80,21 +120,31 @@
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
     border: 1px solid #cdcdcd;
+    border-bottom: none;
     padding: 25px 38px 28px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 896px;
     padding: 0;
     margin: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     border: none;
     border-top: 1px solid #cdcdcd;
+  }
+}
+
+.aside__item:nth-last-child(1) {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -119,7 +169,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 162px;
+    width: 325px;
+  }
+}
+
+.aside__item-size {
+  @media (min-width: $tablet-width) {
+    display: inline;
+    width: 224px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    margin-top: 5px;
   }
 }
 
@@ -140,10 +204,12 @@
     width: 40%;
     text-align: end;
     margin: 0;
+    padding-right: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 132px;
+    width: 56%;
+    text-align: start;
   }
 }
 
@@ -163,6 +229,11 @@
     line-height: 20px;
     width: 10%;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42px;
+    text-align: start;
   }
 }
 
@@ -187,32 +258,51 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin-top: 0;
+    margin: 0;
+    margin-left: 40px;
   }
 }
 
 .aside__item-gift {
   display: block;
   font-size: 0;
-  border-bottom: 1px solid #cdcdcd;
-  background-color: #68b738;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/catalog/background-gift-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
   width: 280px;
   margin: 0 auto;
   margin-top: 34px;
   padding-bottom: 18px;
 
+  &:hover {
+    opacity: 1;
+    cursor: default;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog/background-gift-tablet@1x.png");
+    background-size: 707px 200px;
     width: 100%;
+    min-height: 200px;
     margin: 0;
     margin-top: 70px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog/background-gift-desktop@1x.png");
+    background-size: 245px 288px;
     width: 245px;
     margin-top: 0;
   }
@@ -232,6 +322,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .aside__slogan-gift {
@@ -241,7 +335,6 @@
   line-height: 20px;
   text-transform: none;
   text-decoration: none;
-  background-color: #68b738;
   color: #ffffff;
   width: 162px;
   text-align: center;
@@ -255,6 +348,10 @@
     margin: 0;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .aside__slogan {
@@ -262,6 +359,14 @@
     text-align: start;
     width: 200px;
     padding: 0 30px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
   }
 }
 
@@ -273,13 +378,17 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #68b738;
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
   margin-top: 10px;
   padding: 10px 0;
   padding-bottom: 26px;
+
+  &:hover {
+    opacity: 1;
+    cursor: default;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -292,8 +401,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    width: 162px;
+    margin: 0 auto;
+    margin-top: 56px;
     padding: 0;
-    margin: 0;
   }
 }
