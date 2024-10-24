@@ -217,7 +217,6 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-
     min-height: 512px;
     margin-top: 98px;
     padding: 0 30px;
@@ -331,4 +330,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.example__slider-button:hover,
+.example__slider-button:hover::after,
+.example__slider-button:focus,
+.example__slider-button:focus::after {
+  background-color: #68b738;
+}
+
+.example__slider-button:hover::before,
+.example__slider-button:focus::before {
+  border-color: #68b738;
+}
+
+
+.example__slider-button:active,
+.example__slider-button:active::after {
+  opacity: 0.6;
 }

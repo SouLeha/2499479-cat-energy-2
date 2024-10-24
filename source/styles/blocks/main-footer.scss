@@ -101,3 +101,13 @@
     margin-left: 22px;
   }
 }
+
+.main-footer__copyright-link:hover::after,
+.main-footer__copyright-link:focus::after {
+  background-color: #68b738;
+}
+
+
+.main-footer__copyright-link:active {
+  opacity: 0.3;
+}

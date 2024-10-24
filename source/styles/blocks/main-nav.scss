@@ -131,6 +131,13 @@
   }
 }
 
+.main-nav__link--current a {
+  &:hover {
+    opacity: 1;
+    cursor: default;
+  }
+}
+
 .main-nav__link--catalog.main-nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;

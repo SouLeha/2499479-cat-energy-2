@@ -42,4 +42,8 @@ a {
   &:active {
     background-color: #ebebeb;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

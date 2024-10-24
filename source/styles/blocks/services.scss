@@ -217,6 +217,11 @@
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -239,8 +244,13 @@
   height: 10px;
   margin: auto 15px;
 
+
   @media (min-width: $tablet-width) {
     margin: auto 25px;
     align-items: center;
   }
+}
+
+.services__item-button:hover::after {
+  mask-image: url("../../icons/stack.svg#icon-arrow-long");
 }
