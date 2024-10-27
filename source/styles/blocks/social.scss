@@ -93,9 +93,9 @@
   font-size: 0;
 }
 
-.social__link:hover,
-.social__link:focus {
-  background-color: #68b738;
+.social__item:focus {
+  outline: none;
+  border: none;
 }
 
 // .social__item:focus-within {
@@ -104,6 +104,20 @@
 //   border-radius: 2px;
 // }
 
+
+.social__link:focus {
+  outline: none;
+  border: none;
+  background-color: #68b738;
+}
+
+.social__link:hover {
+  background-color: #68b738;
+}
+
+
 .social__link:active {
+  outline: none;
+  border: none;
   opacity: 0.3;
 }
