@@ -132,9 +132,10 @@
 }
 
 .main-nav__link--current a {
+  cursor: default;
+
   &:hover {
     opacity: 1;
-    cursor: default;
   }
 }
 

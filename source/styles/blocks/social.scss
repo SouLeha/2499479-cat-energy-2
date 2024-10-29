@@ -94,8 +94,8 @@
 }
 
 .social__item:focus {
-  outline: none;
-  border: none;
+  // outline: none;
+  // border: none;
 }
 
 // .social__item:focus-within {
@@ -106,8 +106,8 @@
 
 
 .social__link:focus {
-  outline: none;
-  border: none;
+  // outline: none;
+  // border: none;
   background-color: #68b738;
 }
 
@@ -117,7 +117,7 @@
 
 
 .social__link:active {
-  outline: none;
-  border: none;
+  // outline: none;
+  // border: none;
   opacity: 0.3;
 }
