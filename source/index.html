@@ -24,7 +24,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__navigation">
+    <div class="main-header__navigation" data-test="header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
           <picture>
@@ -58,7 +58,7 @@
         </div>
       </nav>
     </div>
-    <div class="main-header__container">
+    <div class="main-header__container" data-test="hero">
       <h1 class="main-header__title">Функциональное питание для котов</h1>
       <span class="main-header__slogan">Занялся собой? Займись котом!</span>
       <picture>
@@ -72,7 +72,7 @@
       <button class="main-header__title-button button" type="button">подобрать программу</button>
     </div>
   </header>
-  <section class="services">
+  <section class="services" data-test="programs">
     <h2 class="visually-hidden">Программы питания</h2>
     <div class="services__item">
       <h3 class="services__title services__title-slim">Похудение</h3>
@@ -85,7 +85,7 @@
       <button class="services__item-button" type="button">каталог pro</button>
     </div>
   </section>
-  <section class="advantages">
+  <section class="advantages" data-test="features">
     <div class="advantages__wrapper">
       <h3 class="advantages__title">Как это работает</h3>
       <ol class="advantages__list">
@@ -102,7 +102,7 @@
       </ol>
     </div>
   </section>
-  <section class="example">
+  <section class="example" data-test="proof">
     <div class="example__container">
       <h3 class="example__title">Живой пример</h3>
       <p class="example__slogan">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -144,7 +144,7 @@
   </section>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
+      <div class="main-footer__contacts contacts" data-test="contacts">
         <div class="contacts__container">
           <h2 class="contacts__title">приглашаем <br>к&nbsp;сотрудничеству дилеров!</h2>
           <p class="contacts__text">
@@ -164,7 +164,7 @@
           </picture>
         </div>
       </div>
-      <div class="main-footer__social-container">
+      <div class="main-footer__social-container" data-test="footer">
         <div class="main-footer__social social">
           <h2 class="social__title visually-hidden">Cat energy</h2>
           <a class="social__logo-link" href="#">
